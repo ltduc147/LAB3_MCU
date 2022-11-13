@@ -11,7 +11,15 @@
 #include "main.h"
 #include "global.h"
 
-
-void display7SEG(int number);
+void LedClear();
+void update7SEG(int index);
+void updateBuffer_a(int number);
+void updateBuffer_b(int number);
+void display7SEG_a(int number);
+void display7SEG_b(int number);
+void display_RED_GREEN();
+void display_RED_YELLOW();
+void display_GREEN_RED();
+void display_YELLOW_RED();
 
 #endif /* INC_LED_DISPLAY_H_ */

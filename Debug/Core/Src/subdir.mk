@@ -5,8 +5,11 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/fsm_green_change.c \
+../Core/Src/fsm_normal.c \
+../Core/Src/fsm_red_change.c \
+../Core/Src/fsm_yellow_change.c \
 ../Core/Src/global.c \
-../Core/Src/input_processing.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/led_display.c \
 ../Core/Src/main.c \
@@ -18,8 +21,11 @@ C_SRCS += \
 ../Core/Src/timer.c 
 
 OBJS += \
+./Core/Src/fsm_green_change.o \
+./Core/Src/fsm_normal.o \
+./Core/Src/fsm_red_change.o \
+./Core/Src/fsm_yellow_change.o \
 ./Core/Src/global.o \
-./Core/Src/input_processing.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/led_display.o \
 ./Core/Src/main.o \
@@ -31,8 +37,11 @@ OBJS += \
 ./Core/Src/timer.o 
 
 C_DEPS += \
+./Core/Src/fsm_green_change.d \
+./Core/Src/fsm_normal.d \
+./Core/Src/fsm_red_change.d \
+./Core/Src/fsm_yellow_change.d \
 ./Core/Src/global.d \
-./Core/Src/input_processing.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/led_display.d \
 ./Core/Src/main.d \
@@ -51,7 +60,7 @@ Core/Src/%.o Core/Src/%.su: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/global.d ./Core/Src/global.o ./Core/Src/global.su ./Core/Src/input_processing.d ./Core/Src/input_processing.o ./Core/Src/input_processing.su ./Core/Src/input_reading.d ./Core/Src/input_reading.o ./Core/Src/input_reading.su ./Core/Src/led_display.d ./Core/Src/led_display.o ./Core/Src/led_display.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su ./Core/Src/timer.d ./Core/Src/timer.o ./Core/Src/timer.su
+	-$(RM) ./Core/Src/fsm_green_change.d ./Core/Src/fsm_green_change.o ./Core/Src/fsm_green_change.su ./Core/Src/fsm_normal.d ./Core/Src/fsm_normal.o ./Core/Src/fsm_normal.su ./Core/Src/fsm_red_change.d ./Core/Src/fsm_red_change.o ./Core/Src/fsm_red_change.su ./Core/Src/fsm_yellow_change.d ./Core/Src/fsm_yellow_change.o ./Core/Src/fsm_yellow_change.su ./Core/Src/global.d ./Core/Src/global.o ./Core/Src/global.su ./Core/Src/input_reading.d ./Core/Src/input_reading.o ./Core/Src/input_reading.su ./Core/Src/led_display.d ./Core/Src/led_display.o ./Core/Src/led_display.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su ./Core/Src/timer.d ./Core/Src/timer.o ./Core/Src/timer.su
 
 .PHONY: clean-Core-2f-Src
 

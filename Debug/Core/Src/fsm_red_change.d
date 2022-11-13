@@ -1,5 +1,6 @@
-Core/Src/input_reading.o: ../Core/Src/input_reading.c \
- ../Core/Inc/input_reading.h ../Core/Inc/main.h \
+Core/Src/fsm_red_change.o: ../Core/Src/fsm_red_change.c \
+ ../Core/Inc/fsm_red_change.h ../Core/Inc/global.h ../Core/Inc/timer.h \
+ ../Core/Inc/led_display.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -23,8 +24,12 @@ Core/Src/input_reading.o: ../Core/Src/input_reading.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-../Core/Inc/input_reading.h:
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Core/Inc/input_reading.h
+../Core/Inc/fsm_red_change.h:
+../Core/Inc/global.h:
+../Core/Inc/timer.h:
+../Core/Inc/led_display.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -50,3 +55,4 @@ Core/Src/input_reading.o: ../Core/Src/input_reading.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+../Core/Inc/input_reading.h:

@@ -1,3 +1,4 @@
-../Core/Src/input_reading.c:29:6:button_reading	24	static
-../Core/Src/input_reading.c:52:15:is_button_pressed	16	static
-../Core/Src/input_reading.c:57:15:is_button_pressed_1s	16	static
+../Core/Src/input_reading.c:22:6:keyprocess	8	static
+../Core/Src/input_reading.c:26:5:isButtonPress	16	static
+../Core/Src/input_reading.c:34:5:isButtonLongPress	16	static
+../Core/Src/input_reading.c:38:6:button_read	16	static
