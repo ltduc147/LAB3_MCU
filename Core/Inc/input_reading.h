@@ -12,6 +12,5 @@
 int isButtonPress(int index);
 int isButtonLongPress(int index);
 void button_read();
-void keyprocess();
 
 #endif /* INC_INPUT_READING_H_ */

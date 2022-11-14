@@ -19,10 +19,6 @@ int counter_Button[NUM_OF_BUTTONS];
 int flagforLongPress[NUM_OF_BUTTONS];
 int flagforPress[NUM_OF_BUTTONS];
 
-void keyprocess(){
-	HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-}
-
 int isButtonPress(int index){
 	if (flagforPress[index] == 1){
 		flagforPress[index] = 0;
@@ -53,7 +49,6 @@ void button_read(){
 					keybuffer[i] = key2[i];
 					if (keybuffer[i] == BUTTON_PRESSED){
 						flagforPress[i] = 1;
-						keyprocess();
 					} else {
 						flagforLongPress[i] = 0;
 						counter_Button[i] = 0;
