@@ -12,7 +12,7 @@ void fsm_green_change_run(){
 		case SET_GREEN_TIME:
 			if (timer1_flag == 1){
 				setTimer1(500);
-				HAL_GPIO_TogglePin(GPIOA, Y_a_Pin| Y_b_Pin);
+				HAL_GPIO_TogglePin(GPIOA, G_a_Pin| G_b_Pin);
 			}
 			updateBuffer_a(temp_value);
 			updateBuffer_b(mode);

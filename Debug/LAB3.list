@@ -99,8 +99,8 @@ void fsm_green_change_run(){
 				setTimer1(500);
  8000160:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  8000164:	f000 ff3a 	bl	8000fdc <setTimer1>
-				HAL_GPIO_TogglePin(GPIOA, Y_a_Pin| Y_b_Pin);
- 8000168:	f44f 6110 	mov.w	r1, #2304	; 0x900
+				HAL_GPIO_TogglePin(GPIOA, G_a_Pin| G_b_Pin);
+ 8000168:	f44f 6190 	mov.w	r1, #1152	; 0x480
  800016c:	482f      	ldr	r0, [pc, #188]	; (800022c <fsm_green_change_run+0xe0>)
  800016e:	f001 fb1e 	bl	80017ae <HAL_GPIO_TogglePin>
 			}
