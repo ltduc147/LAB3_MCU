@@ -33,6 +33,8 @@ void fsm_green_change_run(){
 				number_display_a = RED_TIME_a;
 				number_display_b = GREEN_TIME_b;
 				setTimer2(10);
+				index = 0;
+				setTimer3(10);
 				status = RED_GREEN;
 			}
 					break;

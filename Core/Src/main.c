@@ -103,7 +103,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   status = INIT;
   setTimer3(10);
-  int index = 0;
   while (1)
   {
 	  fsm_normal_run();

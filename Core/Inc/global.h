@@ -8,7 +8,6 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
-
 #define INIT				0
 
 #define RED_GREEN			1
@@ -32,5 +31,6 @@ extern int number_display_b;
 extern int status;
 extern int mode;
 extern int temp_value;
+extern int index;
 
 #endif /* INC_GLOBAL_H_ */

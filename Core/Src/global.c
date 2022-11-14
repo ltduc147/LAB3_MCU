@@ -20,4 +20,4 @@ int number_display_a;
 int number_display_b;
 int mode = 0;
 int temp_value;
-
+int index = 0;
